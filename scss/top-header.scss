@@ -1,0 +1,259 @@
+.top-header {
+	position: relative;
+	&__container {
+
+	}
+
+	&__slider {
+	}
+
+	&__popup {
+	}
+}
+.bentley-logo {
+	z-index: 10;
+	left: 50%;
+	top: 88px;
+	transform: translate(-50%);
+	position: absolute;
+}
+.slider-top {
+
+	&__content {
+		position: relative;
+		z-index: 10;
+		width: 40%;
+	}
+	&__body {
+		overflow: hidden;
+		width: 100%;
+		height: 100vh;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__item {
+
+
+		padding: 25% 10% 10% 10%;
+		position: relative;
+	}
+
+	&__title {
+		margin-top: 40px;
+	}
+
+	&__text {
+		font-family: AvenirNext, Arial, sans-serif;
+		margin-top: 40px;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		margin-top: 60px;
+	}
+
+	&__details {
+
+		margin-right: 58px;
+	}
+
+	&__dealer {
+		display: flex;
+		align-items: center;
+		color: #fff;
+		line-height: 25px;
+		font-weight: 700;
+		span {
+			margin-left: 15px;
+		}
+
+	}
+
+	&__pagination {
+		position: relative;
+		z-index: 15;
+	}
+}
+.bg-top {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.pagination {
+
+	&__name {
+	}
+
+	&__throw {
+	}
+}
+
+.popup-header {
+	z-index: 10;
+	height: 100vh;
+	top: 0;
+	left: -400px;
+	background-color: #fff;
+	position: absolute;
+	display: flex;
+	transition: all 0.5s ease 0s;
+	&._active {
+		left: 0;
+	}
+
+	&__close {
+		position: absolute;
+	}
+
+	&__list {
+	}
+
+	&__auto {
+	}
+
+	&__auto-item {
+	}
+
+	&__btn {
+		width: 320px;
+		padding: 22px 0;
+		color: #4a4a4a;
+		font-family: "RobotoCondensed";
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 0.8px;
+		line-height: 25px;
+		text-transform: uppercase;
+	}
+
+	&__contacts {
+	}
+
+	&__contacts-item {
+	}
+
+	&__search {
+		position: relative;
+		width: 100%;
+		min-height: 25px;
+		color: #4a4a4a;
+		font-family: "Roboto Condensed";
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 25px;
+		&::after {
+			content: "";
+		}
+	}
+	&__search-label {
+		svg {cursor: pointer;}
+	}
+	&__form {
+		padding-bottom:10px ;
+		margin-top: 20px;
+		display: flex;
+		border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+	}
+}
+.main-popup {
+	flex: 0 0 400px;
+	padding: 40px;
+	&__btn {
+		text-align: left;
+	}
+}
+.model-series {
+	.little-title {
+		background-image: url("../img/bottom-throw.svg");
+		background-repeat: no-repeat;
+		background-position: 90% 50%;
+	}
+	&__list {
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+	&__item {
+		margin-top: 90px;
+		flex: 20%;
+	}
+	&__btn {
+	}
+
+	&__wrap {
+		display: none;
+		padding: 96px 40px 130px 40px;
+		flex: 1 0 0;
+	}
+
+	&__title {
+		padding-left: 40px;
+		color: rgba(0, 0, 0, 0.7);
+font-family: "Rubik";
+font-size: 35px;
+font-weight: 400;
+letter-spacing: 2px;
+line-height: 45px;
+text-transform: uppercase;
+	}
+	&__list-point {
+		display: none;
+	}
+}
+.second-popup {
+	&__btn {
+		text-align: left;
+		width: 100%;
+		padding: 22px 0;
+		color: #4a4a4a;
+font-family: "RobotoCondensed";
+font-size: 20px;
+font-weight: 700;
+line-height: 25px;
+background-color: #fff;
+border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+	}
+}
+.phone-main {
+	margin-top: 50px;
+	color: rgba(0, 0, 0, 0.7);
+font-family: "Rubik";
+font-size: 25px;
+font-weight: 400;
+line-height: 30px;
+}
+
+.model-item {
+&__link {
+	display: flex;
+	height: 300px;
+	flex-direction: column;
+}
+
+	&__title {
+		flex: 1 0 0;
+		padding: 0 40px 0 39px;
+		border: none;
+	}
+
+	&__img {
+		flex: 1 0 90%;
+	}
+
+	&__text {
+		display: flex;
+		align-items: flex-end;
+		flex:  0 0 20%;
+		padding: 0 40px;
+		padding-bottom: 0;
+		color: #000000;
+font-family: "RobotoCondensed";
+font-size: 20px;
+font-weight: 400;
+	}
+}

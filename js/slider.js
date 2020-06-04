@@ -27,7 +27,7 @@ if (sliders) {
 }
 function sliders_bild_callback(params) { }
 
-let main_slider = new Swiper('.slider-pets__body', {
+let main_slider = new Swiper('.slider-top__body', {
 	/*
 	effect: 'fade',
 	autoplay: {
@@ -37,115 +37,41 @@ let main_slider = new Swiper('.slider-pets__body', {
 	*/
 	//observer: true,
 	//init: false,
-	observeParents: true,
+	direction: "vertical",
+	// observeParents: true,
 	slidesPerView: 1,
-	spaceBetween: 100,
-	autoHeight: true,
+	spaceBetween: 0,
+	loopedSlides: 1,
+	freeMode: true,
+	// autoHeight: true,
 	speed: 800,
 	//touchRatio: 0,
-	simulateTouch: true,
+	// simulateTouch: true,
 	loop: true,
-	centeredSlides: true,
+	// centeredSlides: true,
+	// mousewheel: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	// pagination: {
-	// 	el: '.slider-top__pagging',
-	// 	type: "bullets",
-	// },
-	// Arrows
-	breakpoints: {
-		770: {
-			slidesPerView: 3,
-			spaceBetween: 50
-		}
+	pagination: {
+		el: '.slider-top__pagging',
+		type: "bullets",
+		clickable: true,
 	},
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	// Arrows
+	// breakpoints: {
+	// 	770: {
+	// 		slidesPerView: 3,
+	// 		spaceBetween: 50
+	// 	}
+	// },
 	navigation: {
 		nextEl: '.slider-pets__control-before',
 		prevEl: '.slider-pets__control-next',
-
-	},
-
-}
-);
-let our_team = new Swiper('.slider-our-team__body', {
-	/*
-	effect: 'fade',
-	autoplay: {
-	delay: 3000,
-	disableOnInteraction: false,
-	},
-	*/
-	//observer: true,
-	//init: false,
-	observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 100,
-	// autoHeight: true,
-	speed: 800,
-	//touchRatio: 0,
-	simulateTouch: true,
-	loop: true,
-	// centeredSlides: true,
-	//preloadImages: false,
-	//lazy: true,
-	// Dotts
-	// pagination: {
-	// 	el: '.slider-top__pagging',
-	// 	type: "bullets",
-	// },
-	// Arrows
-	breakpoints: {
-		768: {
-			slidesPerView: 1,
-			spaceBetween: 100
-		}
-	},
-	navigation: {
-		nextEl: '.slider-our-team__control-prev',
-		prevEl: '.slider-our-team__control-next',
-
-	},
-
-}
-);
-let reviews = new Swiper('.slider-reviews__body', {
-	/*
-	effect: 'fade',
-	autoplay: {
-	delay: 3000,
-	disableOnInteraction: false,
-	},
-	*/
-	//observer: true,
-	//init: false,
-	observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 300,
-	// autoHeight: true,
-	speed: 800,
-	//touchRatio: 0,
-	simulateTouch: true,
-	loop: true,
-	// centeredSlides: true,
-	//preloadImages: false,
-	//lazy: true,
-	// Dotts
-	// pagination: {
-	// 	el: '.slider-top__pagging',
-	// 	type: "bullets",
-	// },
-	// Arrows
-	breakpoints: {
-		1360: {
-			slidesPerView: 1,
-			spaceBetween: 100
-		}
-	},
-	navigation: {
-		nextEl: '.slider-reviews__control-prev',
-		prevEl: '.slider-reviews__control-next',
-
 	},
 
 }
