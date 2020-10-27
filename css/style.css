@@ -1509,22 +1509,36 @@ body.ie ._ibg img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-bg-2.jpg");
 }
 
+.model-series__content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .model-series__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+          justify-content: flex-start;
 }
 
 .model-series__wrap {
-  max-width: 560px;
+  min-width: 560px;
   background-color: #fff;
-  padding: 120px 80px;
+  padding: 120px 20px 120px 80px;
 }
 
 .model-series__title {
@@ -1535,7 +1549,7 @@ body.ie ._ibg img {
   width: 100%;
   text-align: left;
   display: block;
-  padding: 25px 80px 25px 40px;
+  padding: 28px 80px 28px 40px;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 20px;
@@ -1544,18 +1558,327 @@ body.ie ._ibg img {
   text-transform: uppercase;
 }
 
-.model-series__content-first {
+.model-series__content-car {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  z-index: 5;
+  left: -60px;
+  height: 600px;
   padding: 80px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/swiper-car-1.jpg");
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-1.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-1.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
 }
 
+.model-series__content-car div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.model-series__content-first {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/swiper-car-1.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-1.jpg");
+}
+
+.model-series__content-second {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/swiper-car-2.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-2.jpg");
+}
+
+.model-series__content-third {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/swiper-car-3.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-3.jpg");
+}
+
 .model-series__topic {
   color: #fff;
+}
+
+.accessories__container {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.accessories__item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.accessories__item:hover {
+  background-size: 120%;
+}
+
+.accessories__him {
+  height: 67%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  background-image: url("../img/for-him.jpg");
+}
+
+.accessories__him:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-him.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-him.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-him.jpg");
+}
+
+.accessories__her {
+  height: 67%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  background-image: url("../img/for-her.jpg");
+}
+
+.accessories__her:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-her.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-her.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-her.jpg");
+}
+
+.accessories__auto {
+  height: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
+  background-image: url("../img/for-auto.jpg");
+}
+
+.accessories__auto:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-auto.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-auto.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-auto.jpg");
+}
+
+.accessories__children {
+  height: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
+  background-image: url("../img/for-children.jpg");
+}
+
+.accessories__children:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-children.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-children.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-children.jpg");
+}
+
+.accessories__gifts {
+  height: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
+  background-image: url("../img/gifts.jpg");
+}
+
+.accessories__gifts:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/gifts.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gifts.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gifts.jpg");
+}
+
+.accessories__head {
+  top: 20px;
+  left: 1600px;
+  position: absolute;
+  background-color: #fff;
+  padding: 80px 160px 80px 60px;
+}
+
+.accessories a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 66px 80px;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.accessories-title {
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
+  font-family: Rubic, Arial, sans-serif;
+}
+
+.news {
+  background-color: #fff;
+}
+
+.news ._container {
+  height: 100%;
+}
+
+.news__content {
+  position: relative;
+  height: 100%;
+  padding-bottom: 80px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.news__title {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.card-new {
+  height: 760px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 40px;
+  background-size: auto 360px;
+  background-position: top;
+  background-repeat: no-repeat;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.card-new:hover {
+  background-size: cover;
+  -webkit-box-shadow: 0 25px 25px 0 rgba(57, 68, 84, 0.25);
+          box-shadow: 0 25px 25px 0 rgba(57, 68, 84, 0.25);
+  padding: 80px 40px;
+}
+
+.card-new:hover .card-new__b-text {
+  color: #fff;
+}
+
+.card-new:hover .card-new__text {
+  color: #fff;
+}
+
+.card-new:hover .card-new__more-info {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-new__title {
+  min-width: 200px;
+  padding: 8px 16px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4a4a4a;
+}
+
+.card-new__b-text {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-family: Rubic, Arial, sans-serif;
+}
+
+.card-new__text {
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.card-new__more-info {
+  width: 100%;
+  padding: 25px 0;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  text-align: left;
+}
+
+.card-new__auto {
+  background-image: url("../img/for-auto.jpg");
+}
+
+.card-new__auto:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-auto.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-auto.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-auto.jpg");
+}
+
+.card-new__car {
+  background-image: url("../img/card-img-2.jpg");
+}
+
+.card-new__car:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/card-img-2.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/card-img-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/card-img-2.jpg");
+}
+
+.card-new__saloon {
+  background-image: url("../img/card-img-3.jpg");
+}
+
+.card-new__saloon:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/card-img-3.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/card-img-3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/card-img-3.jpg");
 }
 
 @media (min-width: 991.98px) {
@@ -1608,6 +1931,44 @@ body.ie ._ibg img {
 .model-series__content-first{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/swiper-car-1.webp")}
 .model-series__content-first{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-1.webp")}
 .model-series__content-first{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-1.webp")}
+.model-series__content-second{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/swiper-car-2.webp")}
+.model-series__content-second{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-2.webp")}
+.model-series__content-second{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-2.webp")}
+.model-series__content-third{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/swiper-car-3.webp")}
+.model-series__content-third{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-3.webp")}
+.model-series__content-third{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/swiper-car-3.webp")}
+.accessories__him{background-image:url("../img/for-him.webp")}
+.accessories__him:hover{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-him.webp")}
+.accessories__him:hover{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-him.webp")}
+.accessories__him:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-him.webp")}
+.accessories__her{background-image:url("../img/for-her.webp")}
+.accessories__her:hover{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-her.webp")}
+.accessories__her:hover{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-her.webp")}
+.accessories__her:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-her.webp")}
+.accessories__auto{background-image:url("../img/for-auto.webp")}
+.accessories__auto:hover{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-auto.webp")}
+.accessories__auto:hover{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-auto.webp")}
+.accessories__auto:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-auto.webp")}
+.accessories__children{background-image:url("../img/for-children.webp")}
+.accessories__children:hover{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-children.webp")}
+.accessories__children:hover{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-children.webp")}
+.accessories__children:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-children.webp")}
+.accessories__gifts{background-image:url("../img/gifts.webp")}
+.accessories__gifts:hover{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/gifts.webp")}
+.accessories__gifts:hover{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gifts.webp")}
+.accessories__gifts:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gifts.webp")}
+.card-new__auto{background-image:url("../img/for-auto.webp")}
+.card-new__auto:hover{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/for-auto.webp")}
+.card-new__auto:hover{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-auto.webp")}
+.card-new__auto:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/for-auto.webp")}
+.card-new__car{background-image:url("../img/card-img-2.webp")}
+.card-new__car:hover{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/card-img-2.webp")}
+.card-new__car:hover{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/card-img-2.webp")}
+.card-new__car:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/card-img-2.webp")}
+.card-new__saloon{background-image:url("../img/card-img-3.webp")}
+.card-new__saloon:hover{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/card-img-3.webp")}
+.card-new__saloon:hover{background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/card-img-3.webp")}
+.card-new__saloon:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/card-img-3.webp")}
 }
 
  @media (min-width: 991.98px){
