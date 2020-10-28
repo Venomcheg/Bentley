@@ -1595,6 +1595,7 @@ body.ie ._ibg img {
 }
 
 .model-series__right {
+  z-index: 100;
   right: 92px;
 }
 
@@ -1624,7 +1625,7 @@ body.ie ._ibg img {
   width: 100%;
   text-align: left;
   display: block;
-  padding: 28px 80px 28px 40px;
+  padding: 28px 80px 28px 0px;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 20px;
@@ -1633,7 +1634,17 @@ body.ie ._ibg img {
   text-transform: uppercase;
 }
 
+.model-series__btn._active {
+  padding-left: 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: none;
+}
+
 .model-series__content-car {
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
