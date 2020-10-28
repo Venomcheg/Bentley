@@ -52,6 +52,8 @@ if (document.querySelector('.swiper-main')) {
 		speed: 800,
 		touchRatio: 1,
 		simulateTouch: true,
+		freeMode: true,
+		mousewheel: true,
 		//loop: true,
 		//preloadImages: false,
 		//lazy: true,
@@ -62,7 +64,7 @@ if (document.querySelector('.swiper-main')) {
 		},
 		// Arrows
 		navigation: {
-			nextEl: 'swiper-main__next',
+			nextEl: 'swiper-main__btn',
 			// prevEl: '.about__more .more__item_prev',
 		},
 		/*
@@ -90,11 +92,11 @@ if (document.querySelector('.swiper-main')) {
 			lazyImageReady: function () {
 				ibg();
 			},
-		}
+		},
 		// And if we need scrollbar
-		//scrollbar: {
-		//	el: '.swiper-scrollbar',
-		//},
+		// scrollbar: {
+		// 	el: '.swiper-scrollbar',
+		// },
 	});
 }
 
@@ -172,6 +174,8 @@ if (iconMenu != null) {
 			body_lock(delay);
 			iconMenu.classList.toggle("_active");
 			menuBody.classList.toggle("_active");
+			model_tab.classList.remove('_active')
+			model_block.classList.remove('_active')
 		}
 	});
 };
@@ -180,6 +184,9 @@ function menu_close() {
 	let menuBody = document.querySelector(".menu__body");
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
+
+
+
 }
 //=================
 //BodyLock
@@ -1453,7 +1460,7 @@ function scroll_animate(event) {
 }
 
 let burgerElem = document.querySelector('.burger-main__list');
-let burger = document.querySelector('.burger-main__left');
+
 let hiddenItems = document.querySelectorAll('.hidden-menu__link');
 let burgerRight = document.querySelector('.right-burger');
 let modelBlock = document.querySelector('.model-series__block');
@@ -1463,12 +1470,12 @@ burgerElem.addEventListener("click", function (e) {
 	if (e.target.classList != "burger-main__link burger-main__clickable link-list") return;
 	_slideToggle(e.target.nextElementSibling)
 })
-if (hiddenItems.length > 0) {
-	for (let index = 0; index < hiddenItems.length; index++) {
-		const hiddenItem = hiddenItems[index];
-		hiddenItem.addEventListener("click", function (e) {
-			burgerRight.classList.toggle('_active');
-			hiddenItem.classList.toggle("_active")
-		})
-	}
+
+let model_tab = document.querySelector(".model-tab");
+let model_block = document.querySelector(".model-block");
+if (model_tab) {
+	model_tab.addEventListener('click', function (e) {
+		model_tab.classList.toggle("_active");
+		model_block.classList.toggle("_active");
+	})
 }
